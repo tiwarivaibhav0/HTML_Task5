@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Inter;
+    src: url("/fonts/inter.ttf");
+}
+
+body {
+    align-items: center;
+    display: flex;
+    /* height: 100vh; */
+    justify-content: center;
+}
+
+.container {
+    background-color: #EFF6FF;
+    border: 1px dashed #2563EB;
+    display: flex;
+    height: 324px;
+    justify-content: center;
+    padding: 32px;
+    width:324px;
+
+   
+
+
+}
+
+.outer {    align-items: center; 
+    border: 39px solid #DBEAFE;
+   
+    border-bottom: 39px solid transparent;
+    border-left: 39px solid #BFDBFE;
+    border-radius: 50%;
+    color: #1D4ED8;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+    font-size: 30px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    height: 260px;
+    justify-content: flex-end;
+    line-height: 36px;
+    position: relative;
+  
+    width: 260px;
+
+
+}
+
+.outline {
+    border: 1px dashed #3B82F6;
+    border-bottom: 1px solid transparent;
+    border-radius: 50%;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    height: 176.32px;
+    line-height: 12px;
+    margin-top: 11px;
+    position: absolute;
+    top:10%;
+    width: 180px;
+}
+
+.outline::before {
+    bottom: 12px;
+    color: #3B82F6;
+    content: '00';
+    left: 15px;
+    position: absolute;
+}
+
+.outline::after {
+    bottom: 12px;
+    color: #3B82F6;
+    content: '100';
+    position: absolute;
+    right: 15px;
+}  
+
+.inner {
+    background-color: #BFDBFE;
+    border: 1px dashed #2563EB;
+    border-radius: 50%;
+    height: 22px;
+    left: 45%;
+    position: absolute;
+    top: calc(50% - 11px);
+    width: 22px;
+
+}
+
+.clock-hand {
+    background-color: #BFDBFE;
+    border: 1px dashed #2563EB;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 200%;
+    border-top-right-radius: 200%;
+    bottom: 42%;
+    color: #2563EB;
+    height: 106px;
+    justify-content: end;
+    padding: 3px;
+    padding-top: 1px;
+    padding-bottom: 15px;
+    position: absolute;
+    right: 64%;
+    transform: rotate(319deg);
+    transform-origin: left;
+}
