@@ -6,7 +6,6 @@
 body {
     align-items: center;
     display: flex;
-    /* height: 100vh; */
     justify-content: center;
 }
 
@@ -18,15 +17,10 @@ body {
     justify-content: center;
     padding: 32px;
     width:324px;
-
-   
-
-
 }
 
 .outer {    align-items: center; 
     border: 39px solid #DBEAFE;
-   
     border-bottom: 39px solid transparent;
     border-left: 39px solid #BFDBFE;
     border-radius: 50%;
@@ -42,10 +36,7 @@ body {
     justify-content: flex-end;
     line-height: 36px;
     position: relative;
-  
     width: 260px;
-
-
 }
 
 .outline {
@@ -89,7 +80,10 @@ body {
     position: absolute;
     top: calc(50% - 11px);
     width: 22px;
-
+    outline: #3B82F6;
+    outline-style: dashed;
+    outline-offset: -5px;
+    outline-width: 1px;
 }
 
 .clock-hand {
@@ -110,4 +104,5 @@ body {
     right: 64%;
     transform: rotate(319deg);
     transform-origin: left;
+    z-index: 1;
 }
